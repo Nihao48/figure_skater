@@ -1,6 +1,5 @@
+
 #   ./run.sh                 скорость 4 м/с, наклон 20°
-#   ./run.sh 5 25           свои параметры: скорость, наклон
-#   ./run.sh --test          проверки модели без окна
 set -e
 cd "$(dirname "$0")"
 
@@ -13,7 +12,6 @@ if [ -n "$NEED" ]; then
     sudo apt-get update
     sudo apt-get install -y $NEED
 fi
-
 
 make
 
